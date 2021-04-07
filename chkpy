@@ -1,0 +1,71 @@
+#!/bin/bash
+#this script takes one argument (a .py file) as a argument and puts it through pylint and pycodestyle as well as autopep8 with lvl34 agressiveness
+#this is ment as a fast helper script art sorce anc be found here https://ascii.co.uk/art/tux
+if [ $2 = ]
+then
+def=-q
+else
+def=$2
+fi
+
+if [ $def = "-b" ]
+then
+echo "        _       _                      _  "
+echo "  ___  | |__   | | __  _ __    _   _  | | "
+echo " / __| | '_ \  | |/ / | '_ \  | | | | | | "
+echo "| (__  | | | | |   <  | |_) | | |_| | |_| "
+echo " \___| |_| |_| |_|\_\ | .__/   \__, | (_) "
+echo "                      |_|      |___/      "
+echo " "
+echo " RUNING IN BEFORE AND AFTER MODE"
+echo " "
+echo "##############################"
+echo "output from pylint pre-autopep"
+echo "##############################"
+echo " "
+pylint $1
+echo " "
+echo "###################################"
+echo "output from pycodestyle pre-autopep"
+echo "###################################"
+echo " "
+pycodestyle $1
+echo " "
+echo "RUNNING AUTOPEP8 WITH AGRESSIVENESS LVL 3"
+autopep8 --in-place --aggressive --aggressive --aggressive $1
+echo " "
+echo " "
+echo "###############################"
+echo "output from pylint post-autopep"
+echo "###############################"
+echo " "
+pylint $1
+echo " "
+echo "####################################"
+echo "output from pycodestyle post-autopep"
+echo "####################################"
+echo " "
+pycodestyle $1
+else
+echo "        _       _                      _  "
+echo "  ___  | |__   | | __  _ __    _   _  | | "
+echo " / __| | '_ \  | |/ / | '_ \  | | | | | | "
+echo "| (__  | | | | |   <  | |_) | | |_| | |_| "
+echo " \___| |_| |_| |_|\_\ | .__/   \__, | (_) "
+echo "                      |_|      |___/      "
+echo " "
+echo "RUNNING AUTOPEP8 WITH AGRESSIVENESS LVL 3"
+autopep8 --in-place --aggressive --aggressive --aggressive $1
+echo " "
+echo "##################"
+echo "output from pylint"
+echo "##################"
+echo " "
+pylint $1
+echo " "
+echo "#######################"
+echo "output from pycodestyle"
+echo "#######################"
+echo " "
+pycodestyle $1
+fi
