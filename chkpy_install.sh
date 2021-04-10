@@ -21,16 +21,16 @@ echo "##################################################################"
 echo " "
 pip install pycodestyle
 echo " "
-pip install pylint 
+pip install pylint
 echo " "
 pip install autopep8
-sudo cp chkpy /bin
+cp chkpy /bin
 echo " "
 echo "##################################################################"
-echo " " 
+echo " "
 fi
 
-if [ $input -eq 2 ] 
+if [ $input -eq 2 ]
 then
 echo "sad to see you go"
 echo "removeing chkpy and dependances..."
@@ -42,20 +42,20 @@ echo " "
 pip uninstall pylint -y
 echo " "
 pip uninstall autopep8 -y
-sudo rm /bin/chkpy
+rm /bin/chkpy
 echo " "
 echo "##################################################################"
 echo " "
 fi
 
-if [ $input -eq 3 ] 
+if [ $input -eq 3 ]
 then
 echo "sad to see you go...keep the tools ok?"
 echo "removeing chkpy"
 echo " "
 echo "##################################################################"
 echo " "
-sudo rm /bin/chkpy
+rm /bin/chkpy
 echo "removed chkpy"
 echo " "
 echo "##################################################################"
