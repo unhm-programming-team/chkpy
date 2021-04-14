@@ -1,0 +1,11 @@
+this file specifies how to use and opperate chkpy in it current form.
+
+after instalation use chkpy with the folwing syntax
+
+chkpy "filename.py" -options.
+
+options:
+  -b : runs in before and after mode, gives you all the errors/issues in a file
+       fixes them then returns what it cant fix.
+
+       
