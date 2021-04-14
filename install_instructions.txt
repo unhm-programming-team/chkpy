@@ -1,0 +1,13 @@
+ON LINUX:
+  to install chkpy on linux cd into /chkpy where its downloaded
+  and excite "sudo bash chkpy_install.sh"
+  follow the prompts and it will install
+
+
+ON GITBASH:
+  to install chkpy in gitbash you need to RUN GITBASH AS ADMINISTRATOR and
+   cd into /chkpy where its downloaded and excite "bash chkpy_install.sh"
+  follow the prompts and it will install
+
+
+ON WSL:

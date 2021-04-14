@@ -24,7 +24,7 @@ echo " "
 pip install pylint
 echo " "
 pip install autopep8
-sudo cp chkpy /bin
+cp chkpy /bin
 echo " "
 echo "##################################################################"
 echo " "
@@ -42,7 +42,7 @@ echo " "
 pip uninstall pylint -y
 echo " "
 pip uninstall autopep8 -y
-sudo rm /bin/chkpy
+rm /bin/chkpy
 echo " "
 echo "##################################################################"
 echo " "
@@ -55,7 +55,7 @@ echo "removeing chkpy"
 echo " "
 echo "##################################################################"
 echo " "
-sudo rm /bin/chkpy
+rm /bin/chkpy
 echo "removed chkpy"
 echo " "
 echo "##################################################################"
