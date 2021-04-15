@@ -17,6 +17,17 @@ then
 echo " welcome to chkpy!"
 echo "installing dependances: pycodestyle,pylint & autopep8"
 echo " "
+currentver="$(python3 --version)"
+echo "checking python version for compatibilty, minimum version is ${currentver}!"
+echo " "
+requiredver="3.8.5"
+if [ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ]; 
+then
+echo "Minimum or greater version requirement met!"
+else
+echo "you do not have the minimum required python version you need ${requiredver} or better" || die
+fi
+echo " "
 echo "##################################################################"
 echo " "
 pip3 install pycodestyle
