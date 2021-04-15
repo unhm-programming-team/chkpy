@@ -35,8 +35,7 @@ echo " "
 pip3 install pylint
 echo " "
 pip3 install autopep8
-chmod -w chkpy
-chmod +rx chkpy
+chmod +wrx chkpy
 cp chkpy /bin
 echo " "
 echo "##################################################################"
