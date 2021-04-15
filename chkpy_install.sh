@@ -19,11 +19,13 @@ echo "installing dependances: pycodestyle,pylint & autopep8"
 echo " "
 echo "##################################################################"
 echo " "
-pip install pycodestyle
+pip3 install pycodestyle
 echo " "
-pip install pylint
+pip3 install pylint
 echo " "
-pip install autopep8
+pip3 install autopep8
+chmod -w chkpy
+chmod +rx chkpy
 cp chkpy /bin
 echo " "
 echo "##################################################################"
@@ -37,11 +39,11 @@ echo "removeing chkpy and dependances..."
 echo " "
 echo "##################################################################"
 echo " "
-pip uninstall pycodestyle -y
+pip3 uninstall pycodestyle -y
 echo " "
-pip uninstall pylint -y
+pip3 uninstall pylint -y
 echo " "
-pip uninstall autopep8 -y
+pip3 uninstall autopep8 -y
 rm /bin/chkpy
 echo " "
 echo "##################################################################"
