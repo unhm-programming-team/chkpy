@@ -21,7 +21,7 @@ currentver="$(python3 --version)"
 echo "checking python version for compatibilty, minimum version is ${currentver}!"
 echo " "
 requiredver="3.8.5"
-if [ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ]; 
+if [ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ];
 then
 echo "Minimum or greater version requirement met!"
 else
