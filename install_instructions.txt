@@ -1,6 +1,6 @@
 ON LINUX:
   	to install chkpy on linux cd into /chkpy where its downloaded
-  	and excite "sudo bash chkpy_install.sh"
+  	and excite "bash chkpy_install.sh"
   	follow the prompts and it will install
 
 
@@ -11,14 +11,14 @@ ON GITBASH:
 
 
 ON WSL:
-	to install on wsl cd into /chkpy where its downloaded and 
-	run: "sudo bash chkpy_install.sh"
+	to install on wsl cd into /chkpy where its downloaded and
+	run: "bash chkpy_install.sh"
 	follow the prompts and it will install
 
 WSL notes:
 	things are a little differnt on wsl and therefore certan dependances may be missing initaly
 	the one that is ususaly missing is "pip" if you get "cannot find command "pip" x similar",
-	run "python --version" and install pip according to your version. 
+	run "python --version" and install pip according to your version.
 
-	any pip version under pip3 will not work on wsl becasue the EXACT pacage name needs to be called 
+	any pip version under pip3 will not work on wsl becasue the EXACT pacage name needs to be called
 	to run that package.
